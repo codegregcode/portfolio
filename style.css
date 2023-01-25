@@ -76,3 +76,45 @@ a {
 a:hover {
   color: #fafafa;
 }
+
+#email {
+  background-image: url("images/icons8-gmail-logo-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#email:hover {
+  background-image: url("images/hover-gmail-logo-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#linkedin {
+  background-image: url("images/icons8-linkedin-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#linkedin:hover {
+  background-image: url("images/hover-linkedin-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#twitter {
+  background-image: url("images/icons8-twitter-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#twitter:hover {
+  background-image: url("images/hover-twitter-50.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
