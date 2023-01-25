@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Nanum+Gothic&family=Xanh+Mono&display=swap");
+
 * {
   margin: 0;
+  padding: 2px;
   background-color: #daddd8;
   font-family: "Nanum Gothic", sans-serif;
   color: #1c1c1c;
@@ -20,18 +22,22 @@
 
 #head {
   grid-area: head;
+  display: flex;
+  justify-content: center;
 }
 
 #sub-head {
   grid-area: sub-head;
+  display: flex;
+  justify-content: center;
 }
 
 #sub-container {
   grid-area: sub-container;
   display: grid;
-  grid-template-areas: "projects cv contact-me";
+  grid-template-areas: "cv projects contact-me";
   grid-template-rows: 75vh;
-  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-columns: 33vw 57vw 10vw;
 }
 
 #projects {
@@ -46,7 +52,14 @@
 #contact-me {
   grid-area: contact-me;
 }
-img {
+
+#foot {
+  grid-area: foot;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image {
   width: 30vw;
   height: 30vh;
 }
@@ -56,6 +69,10 @@ iframe {
   height: 70vh;
 }
 
-#foot {
-  grid-area: foot;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fafafa;
 }
