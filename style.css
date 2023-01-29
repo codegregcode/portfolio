@@ -3,9 +3,9 @@
 * {
   margin: 0;
   padding: 2px;
-  background-color: #daddd8;
+  background-color: #ce6c47;
   font-family: "Nanum Gothic", sans-serif;
-  color: #1c1c1c;
+  color: #052f5f;
   box-sizing: border-box;
 }
 
@@ -16,14 +16,19 @@
     "sub-head"
     "sub-container"
     "foot";
-  grid-template-rows: 10vh 10vh 75vh 5vh;
-  grid-template-columns: 100vw;
+  grid-template-rows: 11vh 9vh 75vh 5vh;
+  grid-template-columns: 98vw;
 }
 
 #head {
   grid-area: head;
   display: flex;
   justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  align-self: center;
 }
 
 #sub-head {
@@ -37,7 +42,7 @@
   display: grid;
   grid-template-areas: "cv projects contact-me";
   grid-template-rows: 75vh;
-  grid-template-columns: 33vw 57vw 10vw;
+  grid-template-columns: 32vw 57vw 9vw;
 }
 
 #projects {
@@ -74,46 +79,46 @@ a {
 }
 
 a:hover {
-  color: #fafafa;
+  color: #68a691;
 }
 
 #email {
-  background-image: url("images/icons8-gmail-logo-50.png");
+  background-image: url("images/gmail.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #email:hover {
-  background-image: url("images/hover-gmail-logo-50.png");
+  background-image: url("images/gmail-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #linkedin {
-  background-image: url("images/icons8-linkedin-50.png");
+  background-image: url("images/linkedin.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #linkedin:hover {
-  background-image: url("images/hover-linkedin-50.png");
+  background-image: url("images/linkedin-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #twitter {
-  background-image: url("images/icons8-twitter-50.png");
+  background-image: url("images/twitter.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #twitter:hover {
-  background-image: url("images/hover-twitter-50.png");
+  background-image: url("images/twitter-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
