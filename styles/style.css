@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Nanum+Gothic&family=Xanh+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 2px;
+  background-color: #ce6c47;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #052f5f;
+  box-sizing: border-box;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "sub-head"
+    "sub-container"
+    "foot";
+  grid-template-rows: 11vh 7vh 75vh 6vh;
+  grid-template-columns: 98vw;
+}
+
+#head {
+  grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  align-self: center;
+}
+
+#sub-head {
+  grid-area: sub-head;
+  display: flex;
+  justify-content: center;
+}
+
+#sub-container {
+  grid-area: sub-container;
+  display: grid;
+  grid-template-areas:
+    "cv about-me"
+    "cv projects";
+  grid-template-rows: 15vh 65vh;
+  grid-template-columns: 32vw 57vw 9vw;
+}
+
+#projects {
+  grid-area: projects;
+  overflow-y: scroll;
+}
+
+#cv {
+  grid-area: cv;
+}
+
+#foot {
+  grid-area: foot;
+  display: flex;
+  justify-content: center;
+}
+
+#foot > p {
+  align-self: center;
+}
+
+.project-image {
+  width: 30vw;
+  height: 30vh;
+}
+
+iframe {
+  width: 30vw;
+  height: 70vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #68a691;
+}
+
+#blog-posts-index {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "blog-previews"
+    "foot2";
+  grid-template-columns: 98vw;
+  grid-template-rows: 18vh 75vh 6vh;
+}
+
+#title {
+  grid-area: title;
+}
+
+.home-link {
+  display: flex;
+  justify-content: end;
+}
+
+#blog-previews {
+  grid-area: blog-previews;
+  overflow-y: scroll;
+}
+
+#foot2 {
+  grid-area: foot2;
+  display: flex;
+  justify-content: center;
+}
+
+#foot2 > p {
+  align-self: center;
+}
+
+.blog-preview {
+  border-style: double;
+}
+
+#blog-post {
+  display: grid;
+  grid-template-areas:
+    "blog-title"
+    "blog-body"
+    "foot3";
+  grid-template-columns: 98vw;
+  grid-template-rows: 18vh 75vh 6vh;
+}
+
+#email {
+  background-image: url("../images/gmail.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#blog-title {
+  grid-area: blog-title;
+}
+
+#blog-body {
+  grid-area: blog-body;
+  overflow-y: scroll;
+}
+
+#blog-body > p {
+  padding-bottom: 10px;
+}
+
+#foot3 {
+  grid-area: foot3;
+  display: flex;
+  justify-content: center;
+}
+
+#foot3 > p {
+  align-self: center;
+}
+
+#email:hover {
+  background-image: url("../images/gmail-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#linkedin {
+  background-image: url("../images/linkedin.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#linkedin:hover {
+  background-image: url("../images/linkedin-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#twitter {
+  background-image: url("../images/twitter.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#twitter:hover {
+  background-image: url("../images/twitter-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#github {
+  background-image: url("../images/github.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#github:hover {
+  background-image: url("../images/github-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
