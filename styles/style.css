@@ -23,12 +23,15 @@
 #head {
   grid-area: head;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
 }
 
 h1 {
   align-self: center;
+}
+
+.site-links {
+  align-self: end;
 }
 
 #sub-head {
@@ -132,13 +135,6 @@ a:hover {
   grid-template-rows: 18vh 75vh 6vh;
 }
 
-#email {
-  background-image: url("../images/gmail.png");
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-}
-
 #blog-title {
   grid-area: blog-title;
 }
@@ -162,50 +158,99 @@ a:hover {
   align-self: center;
 }
 
+#email {
+  background-image: url("../images/icons/gmail.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
 #email:hover {
-  background-image: url("../images/gmail-hover.png");
+  background-image: url("../images/icons/gmail-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #linkedin {
-  background-image: url("../images/linkedin.png");
+  background-image: url("../images/icons/linkedin.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #linkedin:hover {
-  background-image: url("../images/linkedin-hover.png");
+  background-image: url("../images/icons/linkedin-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #twitter {
-  background-image: url("../images/twitter.png");
+  background-image: url("../images/icons/twitter.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #twitter:hover {
-  background-image: url("../images/twitter-hover.png");
+  background-image: url("../images/icons/twitter-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #github {
-  background-image: url("../images/github.png");
+  background-image: url("../images/icons/github.png");
   height: 50px;
   width: 50px;
   display: inline-block;
 }
 
 #github:hover {
-  background-image: url("../images/github-hover.png");
+  background-image: url("../images/icons/github-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#blog {
+  background-image: url("../images/icons/blog.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#blog:hover {
+  background-image: url("../images/icons/blog-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#home-icon {
+  background-image: url("../images/icons/home.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#home-icon:hover {
+  background-image: url("../images/icons/home-hover.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#blog-index {
+  background-image: url("../images/icons/index.png");
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#blog-index:hover {
+  background-image: url("../images/icons/index-hover.png");
   height: 50px;
   width: 50px;
   display: inline-block;
