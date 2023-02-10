@@ -265,3 +265,8 @@ figure {
   width: 30%;
   height: auto;
 }
+
+.larger {
+  width: 75%;
+  height: auto;
+}

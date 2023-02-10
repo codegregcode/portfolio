@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10/02/23 - Backend(s)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  </head>
+  <body>
+    <div id="blog-post">
+      <div id="blog-title">
+        <h1>
+          <a class="home-link" href="../index.html"
+            ><div id="home-icon"></div></a
+          ><a class="home-link" href="blog-index.html"
+            ><div id="blog-index"></div
+          ></a>
+          10/02/23- Backend(s)
+        </h1>
+      </div>
+      <div id="blog-body">
+        <p>
+          When I last posted I was just starting the Backend module with Command
+          Shift, and at that point was part way through an exercise using SQL
+          and pgAdmin.
+        </p>
+        <p>
+          Learning SQL meant a lot of retrieving data, updating and adding data
+          to databases, joining databases, and to be brutally honest I found it
+          a bit boring (even though I know it'll have it's uses). So, I was
+          really pleased when we started learning how to create our own APIs
+          using express JS!
+        </p>
+        <p>
+          So most of my time this has been spent creating an API that works with
+          the code I made way back at the start of the course when first
+          learning JavaScript. There's a strange sense of satisfaction when I
+          send a get and post request to my server and then receiving the
+          (correct) response that my code has generated! Much more exciting than
+          SQL!
+        </p>
+        <figure>
+          <img class="larger" src="../images/blog/2023-02-10/get.gif" />
+        </figure>
+        <p>
+          You can see an example of the API working above. To explain in a bit
+          more detail, what I'm doing is sending a 'get' request with the
+          parameters (numbers to add or subtract) in the url. Also, please feel
+          free to look over the code and even fork/clone over on the
+          <a
+            href="https://github.com/codegregcode/javascript-basics-express"
+            target="_blank"
+            >GitHub page</a
+          >
+        </p>
+        <figure>
+          <img
+            class="larger"
+            src="../images/blog/2023-02-10/function-import.png"
+          />
+        </figure>
+        <figure>
+          <img
+            class="larger"
+            src="../images/blog/2023-02-10/get-and-post.png"
+          />
+        </figure>
+        <p>
+          The first image shows the functions being imported from /lib. In the
+          second image you'll see how the express app responds to the request.
+          On lines 57 and 58 the variables int1 and int2 take the parameters
+          :num1 and :num2 (which are currently strings) and turn them into
+          integers. After from lines 60 to 63 we check whether int1 or int2 is
+          not a number. isNaN returns true if not a number and using a ternary ?
+          expression we say "well if either return true (meaning one or both is
+          not a number), then we're going to set teh status to error code 400,
+          and send JSON displaying the error message...however...if false...and
+          they're both numbers, then we'll set status to 200 (ok) and send JSON
+          with the function needed passing in int1 and int2 as the arguments
+          required. "
+        </p>
+        <figure>
+          <img class="larger" src="../images/blog/2023-02-10/post.gif" />
+        </figure>
+        <p>
+          You can see how in the post request we send the arguments in the body
+          as JSON.
+        </p>
+        <figure>
+          <img class="larger" src="../images/blog/2023-02-10/functions.png" />
+        </figure>
+        <p>
+          And finally here's what's in the numbers.js file in the lib directory!
+        </p>
+        <p>
+          It's been a lot of fun working on the API, and getting stuck in with
+          backend coding, so the next thing to do is to send my code for a code
+          review, and wait to hear back. I think next week we're starting a
+          bigger project using express and postgres, which is about creating a
+          music library! But I'm really happy with how the course is going, and
+          I'm looking forward to next week! However, as we're moving through the
+          backend module, I'm always reminded that I'm heading into the
+          'backend' of the course having passed the halfway point :(
+        </p>
+      </div>
+      <div id="foot3">
+        <footer id="foot">
+          <a href="mailto:codegregcode@gmail.com"><div id="email"></div></a>
+          <a href="https://github.com/codegregcode"><div id="github"></div></a>
+          <p>2023 - site created by Greg Cain</p>
+          <a
+            href="https://www.linkedin.com/in/greg-cain-a74536255/"
+            target="_blank"
+            ><div id="linkedin"></div
+          ></a>
+          <a href="https://twitter.com/codegregcode" target="_blank"
+            ><div id="twitter"></div
+          ></a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
